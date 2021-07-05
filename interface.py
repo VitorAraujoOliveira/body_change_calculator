@@ -101,11 +101,24 @@ class interface:
 
                 
 
-    def graphic_interface():
+    def graphic_ploting():
         fig = matplotlib.figure.Figure(figsize=(5, 4), dpi=100)
-        t = np.arange(0, 3, .01)
-        fig.add_subplot(111).plot(t, 2 * np.sin(2 * np.pi * t))
+        import matplotlib.pyplot as plt
 
+        x_data = [0.1, 0.2, 0.3, 0.4]
+        y_data = [1, 2, 3, 4]
+
+        fig = plt.figure()
+        ax = fig.add_subplot(1, 1, 1)
+        ax.plot([0.1, 0.2, 0.3, 0.4], [1, 2, 3, 4],label ='test')
+        ax.plot([0.1, 0.2, 0.3, 0.4], [1, 4, 9, 16],label ='test2')
+        plt.legend()
+        ax.set_xlabel('Time (s)')
+        ax.set_ylabel('Scale (Bananas)')
+
+  
+
+        
 
         # Define the window layout
         layout = [
@@ -138,7 +151,7 @@ class interface:
         window.close()
 
 
-
+interface.graphic_ploting()
 
 
 
