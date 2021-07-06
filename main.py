@@ -3,7 +3,7 @@ import organizer
 import interface
 import file_organizer
 import bmi_calculator
-
+import data_catcher
 
 
 
@@ -31,3 +31,12 @@ new_line_data = str(today_date)+";"+new_line_data[0]+";"+new_line_data[1]+";"+ne
 
 file_organizer.file_organizer.save_monthly_data(new_line_data,folder_name,current_month_name)
 file_organizer.file_organizer.save_yearly_data(new_line_data,current_year)
+
+
+# yearly_data = data_catcher.data_catcher.get_yearly_data(current_year)
+# time = yearly_data["Data"]
+# data = yearly_data["Peso(Kg)"]
+# labels = ["Peso(Kg)"]
+# print(yearly_data.columns)
+# number_days=data_catcher.data_catcher.get_incremental_days_year(current_year)
+# interface.interface.graphic_ploting(data,number_days,labels)

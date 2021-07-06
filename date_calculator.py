@@ -15,7 +15,7 @@ class date_calculator:
 
     def get_today_date():
         today = datetime.datetime.now().date()
-
+        today = today.strftime("%d/%m/%Y")
         return(today)
     
     def get_today_day():
