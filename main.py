@@ -33,10 +33,10 @@ file_organizer.file_organizer.save_monthly_data(new_line_data,folder_name,curren
 file_organizer.file_organizer.save_yearly_data(new_line_data,current_year)
 
 
-# yearly_data = data_catcher.data_catcher.get_yearly_data(current_year)
-# time = yearly_data["Data"]
-# data = yearly_data["Peso(Kg)"]
-# labels = ["Peso(Kg)"]
-# print(yearly_data.columns)
-# number_days=data_catcher.data_catcher.get_incremental_days_year(current_year)
-# interface.interface.graphic_ploting(data,number_days,labels)
+yearly_data = data_catcher.data_catcher.get_yearly_data(current_year)
+time = yearly_data["Date"]
+data = yearly_data["Weight(kg)"]
+labels = ["Weight(kg)"]
+print(yearly_data.columns)
+number_days=data_catcher.data_catcher.get_incremental_days_year(current_year)
+interface.interface.graphic_ploting(data,number_days,labels)

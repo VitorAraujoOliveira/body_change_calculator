@@ -29,7 +29,7 @@ class file_organizer:
         print('FIRST LINE: '+open(path_to_file).readline())
         if first_line == '':
             f = open(path_to_file, "a")
-            f.write("Date;Weight(kg);Waist(cm);Belly(cm);Thighs(cm);Biceps(cm);Body Fat(mm);BMI(kg/m²);BMI class;")
+            f.write("Date;Weight(kg);Waist(cm);Belly(cm);Thighs(cm);Biceps(cm);Body Fat(mm);BMI;BMI class;")
             f.close()
 
     def save_yearly_data(data,year):
@@ -48,7 +48,7 @@ class file_organizer:
         first_line = (open(path_to_file).readline())
         if first_line == '':
             f = open(path_to_file, "a")
-            f.write("Date;Weight(kg);Waist(cm);Belly(cm);Thighs(cm);Biceps(cm);Body Fat(mm);BMI(kg/m²);BMI class;")
+            f.write("Date;Weight(kg);Waist(cm);Belly(cm);Thighs(cm);Biceps(cm);Body Fat(mm);BMI;BMI class;")
             f.close()
 
     def save_monthly_data(data,folder_name,month_name):
