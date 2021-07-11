@@ -28,3 +28,13 @@ class bmi_calculator:
         
         return range
 
+    def get_limiar_weights(height):
+        morbidly_obesity_limiar = 40 * (height**2)
+        severe_obesity_limiar = 35 * (height**2)
+        obesity_limiar = 30 * (height**2)
+        overweight_limiar = 25 * (height**2)
+        ideal_weight_limiar = 21.5 * (height**2)
+        underweight_limiar = 18.5 * (height**2)
+
+        return [ideal_weight_limiar,overweight_limiar,obesity_limiar,severe_obesity_limiar,morbidly_obesity_limiar,underweight_limiar]
+    
